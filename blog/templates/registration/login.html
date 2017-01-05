@@ -19,10 +19,13 @@
     <td>{{ form.password.label_tag }}</td>
     <td>{{ form.password }}</td>
 </tr>
-</table>
+<tr>
+    <td></td>
+    <td><input type="submit" value="login" /></td>
+    <input type="hidden" name="next" value="{{ next }}" />
+</tr>
 
-<input type="submit" value="login" />
-<input type="hidden" name="next" value="{{ next }}" />
+</table>
 </form>
 
 {% endblock %}
